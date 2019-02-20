@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '..';
+import TransactionList from '..';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  const data = {
+    transactionIds: [],
+    transactions: {},
+    transactionItemIds: [],
+    transactionItems: {},
+  }
+  ReactDOM.render(
+    <TransactionList
+      data={data}
+    />,
+    div
+  );
   ReactDOM.unmountComponentAtNode(div);
 });
