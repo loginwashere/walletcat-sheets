@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/loginwashere/walletcat-sheets/precache-manifest.4fc8304851a3af64e6813cd08a3e75a8.js"
+  "/walletcat-sheets/precache-manifest.cbe0d2eca3ed8ca21ee474a52904109c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/loginwashere/walletcat-sheets/index.html", {
+workbox.routing.registerNavigationRoute("/walletcat-sheets/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
