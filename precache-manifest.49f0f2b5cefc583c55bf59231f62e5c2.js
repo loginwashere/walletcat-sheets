@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/walletcat-sheets/static/css/main.6b15bfca.chunk.css"
   },
   {
-    "revision": "96575ceb1b3da44a9d7b531b2f696239",
+    "revision": "8f6228d4ff600b3a2e7be4657d4b2861",
     "url": "/walletcat-sheets/index.html"
   }
 ];
