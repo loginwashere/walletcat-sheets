@@ -145,7 +145,9 @@ class TransactionNewForm extends Component<IProps> {
         <TextField
           id="description"
           label="Description"
-          fullWidth
+          helperText={touched.description ? errors.description : ''}
+          error={touched.description && Boolean(errors.description)}
+          fullWidth={true}
           className={classes.textField}
           value={description}
           onChange={this.handleChange('description')}
@@ -154,6 +156,8 @@ class TransactionNewForm extends Component<IProps> {
         <DateTimePicker
           label="Date"
           value={date}
+          helperText={touched.date ? errors.date : ''}
+          error={touched.date && Boolean(errors.date)}
           className={classes.textField}
           onChange={this.handleDateChange}
           margin="normal"
@@ -203,7 +207,7 @@ class TransactionNewForm extends Component<IProps> {
                         options={data.accountIds.map(item => ({value: item, label: data.accounts[item].name}))}
                         value={transactionItem.accountId}
                         onChange={this.handleFieldArrayChange(`transactionItems.${index}.accountId`)}
-                        name="accountId"
+                        name={`transactionItems.${index}.accountId`}
                       />
                       <Fab
                         size="small"
